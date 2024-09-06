@@ -45,7 +45,8 @@ def main():
             
             for bullet in shots:
                 if ast.collision(bullet):
-                    ast.kill()
+                    ast.split()
+                    bullet.kill()
 
         for drw in drawable:
             drw.draw(screen)
